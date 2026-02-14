@@ -27,7 +27,6 @@ if (
     $message .= $_POST["message"];
     $message .= '</p>';
     $message .= '</body></html>';
-
     if (mail($to, $subject, $message, $headers)) {
       echo ('Message send with success');
     } else {
